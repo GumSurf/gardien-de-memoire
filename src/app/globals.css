@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-fond: #fbfaf5;
+  --color-doux: #eaf0e6;
+  --color-encre: #25312a;
+  --color-gris: #5d6b62;
+  --color-vert: #2f5d46; /* TODO : vert exact de la carte de visite */
+  --color-rose: #b9788b;
+  --color-trait: #d5ddd0;
+  --font-script: var(--font-titre), "AdageScriptJF", cursive;
+  --font-texte: var(--font-corps), "TeX Gyre Termes", "Times New Roman", serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: var(--color-fond); color: var(--color-encre); font-family: var(--font-texte); font-size: 1.125rem; line-height: 1.65; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---- Hero : animation d'arrivée (à ajouter à la fin de globals.css) ---- */
+@keyframes lever {
+  from { opacity: 0; transform: translateY(14px); filter: blur(4px); }
+  to   { opacity: 1; transform: none; filter: none; }
 }
+@keyframes pousser {
+  from { opacity: 0; transform: translateY(24px) scale(0.94); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes tracer { to { stroke-dashoffset: 0; } }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.lever  { animation: lever 1s cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: var(--d, 0s); }
+.pousse { transform-origin: bottom left; animation: pousser 1.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.trait  { stroke-dasharray: 600; stroke-dashoffset: 600; animation: tracer 1.6s ease-out 0.9s forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lever, .pousse { animation: none; }
+  .trait { animation: none; stroke-dashoffset: 0; }
 }
