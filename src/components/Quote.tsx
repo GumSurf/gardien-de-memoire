@@ -75,36 +75,6 @@ export default function Quote() {
         <div className="mt-8">
           <OrnementCitation />
         </div>
-
-        {/* Petite branche décorative */}
-        <svg
-          viewBox="0 0 100 100"
-          className="pointer-events-none absolute -bottom-16 -right-10 hidden h-32 w-32 rotate-12 opacity-40 sm:block md:-right-20"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M10 95C35 70 40 38 85 8"
-            stroke="#486B52"
-            strokeWidth="1.4"
-            strokeLinecap="round"
-          />
-          <path
-            d="M31 72C14 70 10 58 12 48C24 51 32 59 31 72Z"
-            fill="#486B52"
-            fillOpacity=".7"
-          />
-          <path
-            d="M48 48C45 32 54 23 66 21C66 35 59 44 48 48Z"
-            fill="#486B52"
-            fillOpacity=".7"
-          />
-          <path
-            d="M63 31C60 18 67 10 78 7C79 18 72 27 63 31Z"
-            fill="#C985A0"
-            fillOpacity=".8"
-          />
-        </svg>
       </div>
     </section>
   );
