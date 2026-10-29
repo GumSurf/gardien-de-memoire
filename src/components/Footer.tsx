@@ -90,7 +90,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-6 border-t border-[#D9B979]/35 pt-5 text-center">
           <p className="text-xs leading-6 text-gris">
-            © {new Date().getFullYear()} {contact.nom}. Tous droits réservés.
+            © 2026 {contact.nom}. Tous droits réservés.
           </p>
 
           <a
