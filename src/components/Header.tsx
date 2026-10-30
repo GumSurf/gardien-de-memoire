@@ -50,7 +50,7 @@ export default function Navbar() {
               src="/images/logo.png"
               alt="Logo Gardien de mémoire"
               fill
-              sizes="96px"
+              sizes="156px"
               className="object-contain"
             />
           </span>
