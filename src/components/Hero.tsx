@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import Logo from "./Logo";
+import Image from "next/image";
 
 const delai = (s: number) => ({ "--d": `${s}s` }) as CSSProperties;
 
@@ -58,8 +58,18 @@ export default function Hero() {
       <Feuillage miroir className="w-28 opacity-70 sm:w-40 lg:w-60" />
 
       <div className="relative z-[1] mx-auto max-w-3xl">
-        <div className="lever mx-auto mb-2 w-fit text-vert" style={delai(0)}>
-          <Logo size={56} />
+        <div
+          className="lever mx-auto mb-4 w-fit"
+          style={delai(0)}
+        >
+          <Image
+            src="/images/logo.png"
+            alt="Logo Gardien de mémoire"
+            width={180}
+            height={180}
+            priority
+            className="h-28 w-28 object-contain sm:h-36 sm:w-36"
+          />
         </div>
 
         <h1 className="lever font-script text-[clamp(3.6rem,12vw,7.5rem)] leading-[1.05] text-vert" style={delai(0.15)}>
