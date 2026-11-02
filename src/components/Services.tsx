@@ -174,8 +174,7 @@ export default function Services() {
           </div>
 
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-gris sm:text-lg">
-            Un entretien ponctuel ou régulier, adapté à vos souhaits
-            et à ceux de votre proche.
+            Un entretien ponctuel ou régulier, adapté à vos souhaits.
           </p>
         </header>
 
