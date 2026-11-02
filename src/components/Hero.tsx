@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { Pensee, Rose } from "./Fleurs";
 
 const delai = (s: number) => ({ "--d": `${s}s` }) as CSSProperties;
 
@@ -9,18 +10,6 @@ const feuilles: [number, number, number, number][] = [
   [80, 95, -45, 0.9], [98, 60, 40, 0.9], [118, 30, -30, 0.8],
 ];
 
-function Fleur({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
-  return (
-    <g transform={`translate(${x} ${y}) scale(${s})`}>
-      {[0, 72, 144, 216, 288].map((r) => (
-        <ellipse key={r} cx="0" cy="-9" rx="7" ry="10" transform={`rotate(${r})`} className="fill-rose" fillOpacity="0.8" />
-      ))}
-      <circle r="3.6" className="fill-fond" />
-      <circle r="1.6" className="fill-rose" />
-    </g>
-  );
-}
-
 function Feuillage({ miroir = false, className = "" }: { miroir?: boolean; className?: string }) {
   return (
     <div aria-hidden="true" className={`pointer-events-none absolute bottom-0 ${miroir ? "right-0" : "left-0"} ${className}`} style={miroir ? { transform: "scaleX(-1)" } : undefined}>
@@ -29,9 +18,10 @@ function Feuillage({ miroir = false, className = "" }: { miroir?: boolean; class
         {feuilles.map(([x, y, r, s], i) => (
           <path key={i} d="M0 0C7-10 7-28 0-42C-7-28-7-10 0 0Z" transform={`translate(${x} ${y}) rotate(${r}) scale(${s})`} className="fill-vert" fillOpacity={0.28 + (i % 3) * 0.12} />
         ))}
-        <Fleur x={131} y={8} s={1.3} />
-        <Fleur x={98} y={202} s={0.9} />
-        <Fleur x={52} y={330} s={0.8} />
+        <Rose x={131} y={8} s={0.6} rot={15} />
+        <Pensee x={102} y={196} s={0.5} rot={-12} />
+        <Rose x={56} y={318} s={0.45} rot={-20} />
+        <Pensee x={88} y={100} s={0.38} rot={14} />
       </svg>
     </div>
   );
@@ -57,7 +47,6 @@ export default function Hero() {
       <Feuillage miroir className="w-28 opacity-70 sm:w-40 lg:w-60" />
 
       <div className="relative z-[1] mx-auto max-w-3xl">
-
         <h1 className="lever font-script text-[clamp(3.6rem,12vw,7.5rem)] leading-[1.05] text-vert" style={delai(0.15)}>
           Gardien de mémoire
         </h1>
