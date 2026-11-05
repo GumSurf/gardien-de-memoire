@@ -99,6 +99,19 @@ export default function Footer() {
           >
             Retour en haut ↑
           </a>
+
+          {/* Crédit développeur */}
+          <p className="mt-4 text-[11px] text-gris/80">
+            Site réalisé par{" "}
+            <a
+              href="https://gabrielchriste.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-vert transition-colors hover:text-rose"
+            >
+              Gabriel Christe
+            </a>
+          </p>
         </div>
       </div>
     </footer>
