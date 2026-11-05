@@ -1,6 +1,6 @@
 export const contact = {
   nom: "Céline Six",
-  tel: "00 00 00 00 00", // TODO
+  tel: "06 82 51 83 36", // TODO
   mail: "contact@gardien-de-memoire-bretagne.fr", // TODO
   ville: "Gestel (56)",
   siret: "102 382 017 00014",

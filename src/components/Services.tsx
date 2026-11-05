@@ -10,19 +10,19 @@ import {
 
 const imagesPrestations: Record<string, { src: string; alt: string }> = {
   nettoyage: {
-    src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    src: "/images/tombe_washing.png",
     alt: "Allée paisible bordée d'arbres dans un espace naturel",
   },
   lettres: {
-    src: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23",
+    src: "/images/gold_restauration.png",
     alt: "Détail de pierre naturelle",
   },
   fleurissement: {
-    src: "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
+    src: "/images/fleurs.jpg",
     alt: "Fleurs délicates dans des tons doux",
   },
   bougie: {
-    src: "https://images.unsplash.com/photo-1603006905003-be475563bc59",
+    src: "/images/fleurs.jpg",
     alt: "Bougie allumée dans une ambiance apaisante",
   },
 };
@@ -327,10 +327,10 @@ export default function Services() {
                   <Image
                     src={
                       index === 0
-                        ? "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                        ? "/images/tombe3.jpg"
                         : index === 1
-                          ? "https://images.unsplash.com/photo-1490750967868-88aa4486c946"
-                          : "https://images.unsplash.com/photo-1518709268805-4e9042af9f23"
+                          ? "/images/tombe1.jpg"
+                          : "/images/tombe5.jpg"
                     }
                     alt=""
                     fill
