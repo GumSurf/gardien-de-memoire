@@ -22,7 +22,7 @@ const imagesPrestations: Record<string, { src: string; alt: string }> = {
     alt: "Fleurs délicates dans des tons doux",
   },
   bougie: {
-    src: "/images/fleurs.jpg",
+    src: "/images/candle.jpg",
     alt: "Bougie allumée dans une ambiance apaisante",
   },
 };
