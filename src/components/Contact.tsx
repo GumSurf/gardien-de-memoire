@@ -74,7 +74,6 @@ export default function Contact() {
               </span>
             </span>
           </a>
-
           {/* E-mail */}
           <a
             href={`mailto:${contact.mail}`}
@@ -101,7 +100,7 @@ export default function Contact() {
                 Adresse e-mail
               </span>
 
-              <span className="mt-1 block break-all font-semibold text-vert transition-colors group-hover:text-rose">
+              <span className="mt-1 block whitespace-nowrap text-xs font-semibold text-vert transition-colors group-hover:text-rose sm:text-sm">
                 {contact.mail}
               </span>
 

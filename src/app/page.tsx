@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import AvisClients from "@/components/AvisClients";
+import ZoneIntervention from "@/components/ZoneIntervention";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Quote />
         <Services />
+        <ZoneIntervention />
         <AvisClients />
         <Faq />
         <Contact />

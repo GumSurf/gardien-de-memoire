@@ -5,7 +5,7 @@ export default function AvisClients() {
     <section id="avis" className="relative overflow-hidden bg-doux px-5 py-24">
       {/* Halos décoratifs */}
       <div className="pointer-events-none absolute -right-24 top-10 h-64 w-64 rounded-full bg-rose/10 blur-3xl" aria-hidden="true" />
-      <div className="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-vert/15 blur-3xl" aria-hidden="true" />
+
 
       <div className="relative mx-auto max-w-5xl">
         <div className="mx-auto mb-14 max-w-2xl text-center">

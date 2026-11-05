@@ -179,7 +179,7 @@ export default function Services() {
         </header>
 
         {/* Prestations à l'unité */}
-        <div className="mt-20 sm:mt-24">
+        <div id="prestations" className="mt-20 sm:mt-24">
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-rose">
@@ -293,7 +293,7 @@ export default function Services() {
         </div>
 
         {/* Formules annuelles */}
-        <div className="mt-24 sm:mt-28">
+        <div id="formules" className="mt-24 sm:mt-28">
           <header className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-rose">
               02 / Toute l’année
