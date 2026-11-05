@@ -5,9 +5,10 @@
   --color-doux: #eaf0e6;
   --color-encre: #25312a;
   --color-gris: #5d6b62;
-  --color-vert: #2f5d46; /* TODO : vert exact de la carte de visite */
+  --color-vert: #2f5d46;
   --color-rose: #b9788b;
   --color-trait: #d5ddd0;
+  --color-jaune-pale: #F8F5EF;
   --font-script: var(--font-titre), "AdageScriptJF", cursive;
   --font-texte: var(--font-corps), "TeX Gyre Termes", "Times New Roman", serif;
 }

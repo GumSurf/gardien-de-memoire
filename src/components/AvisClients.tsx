@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AvisClients() {
   return (
     <section id="avis" className="relative overflow-hidden bg-doux px-5 py-24">
@@ -23,10 +25,13 @@ export default function AvisClients() {
               <div className="absolute -bottom-16 -right-10 h-56 w-56 rounded-full border border-white/10" aria-hidden="true" />
 
               <div className="relative flex flex-col items-center text-center">
-                <svg viewBox="0 0 100 100" fill="none" className="mb-5 h-20 w-20 text-white/80" aria-hidden="true">
-                  <path d="M50 82C50 61 34 49 22 40C14 34 16 22 25 19C35 16 43 25 50 38C57 25 65 16 75 19C84 22 86 34 78 40C66 49 50 61 50 82Z" stroke="currentColor" strokeWidth="1.2" />
-                  <path d="M50 82V42M50 60C39 55 32 48 29 39M50 66C61 58 68 49 71 39" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-                </svg>
+                <Image
+                  src="/images/gardien_de_memoire_blanc.png"
+                  alt="Photo d'une tombe fleurie"
+                  width={120}
+                  height={120}
+                  className="mb-5 rounded-full border border-white/20 object-cover shadow-[0_10px_30px_rgba(47,69,53,0.2)]"
+                />
                 <span className="font-script text-4xl text-white">Avec attention</span>
                 <span className="mt-1 text-base text-white/85">et bienveillance</span>
               </div>
