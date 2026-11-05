@@ -6,10 +6,41 @@ import "./globals.css";
 const corps = Tinos({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-corps" });
 const titre = Pinyon_Script({ subsets: ["latin"], weight: "400", variable: "--font-titre" });
 
+
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "Gardien de mémoire - Céline Six, entretien de tombes autour de Gestel",
-  description: "Nettoyage, entretien et fleurissement de tombes dans un rayon de 30 km autour de Gestel (Morbihan).",
+  metadataBase: new URL("https://gardien-de-memoire-bretagne.fr"),
+
+  title:
+    "Nettoyage et entretien de sépultures à Gestel et Lorient",
+
+  description:
+    "Gardien de mémoire propose le nettoyage, l'entretien, le fleurissement et la rénovation de sépultures à Gestel, Lorient et dans les communes voisines du Morbihan.",
+
+  keywords: [
+    "nettoyage sépulture",
+    "entretien tombe",
+    "nettoyage tombe Lorient",
+    "entretien sépulture Gestel",
+    "nettoyage pierre tombale",
+    "rénovation lettres gravées",
+    "fleurissement sépulture",
+    "entretien monument funéraire",
+    "Morbihan",
+  ],
+
+  openGraph: {
+    title: "Gardien de mémoire | Entretien de sépultures",
+    description:
+      "Nettoyage, entretien, fleurissement et rénovation de sépultures à Gestel et dans le secteur de Lorient.",
+    url: "https://gardien-de-memoire-bretagne.fr",
+    siteName: "Gardien de mémoire",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

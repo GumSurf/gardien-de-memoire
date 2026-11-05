@@ -10,23 +10,23 @@ export const contact = {
 export const prestations = [
   {
     id: "nettoyage",
-    titre: "Nettoyage complet",
+    titre: "Nettoyage et entretien de sépulture",
     texte:
-      "Un entretien attentif de la sépulture pour préserver sa propreté et son aspect soigné, dans le respect de la pierre et des ornements.",
+      "Je réalise le nettoyage complet de votre tombe et de votre monument funéraire afin de préserver la pierre tombale, les plaques et les ornements. Un entretien soigné, réalisé dans le respect des matériaux et de la mémoire de vos proches.",
     prix: null,
     details: [
-      "Nettoyage de la pierre tombale",
+      "Nettoyage de la pierre tombale et du monument funéraire",
       "Nettoyage des plaques et des ornements",
       "Désherbage et retrait des mousses",
-      "Entretien des abords",
+      "Entretien des abords de la sépulture",
       "Bilan photographique envoyé par e-mail",
     ],
   },
   {
     id: "lettres",
-    titre: "Rénovation des lettres",
+    titre: "Rénovation des lettres gravées",
     texte:
-      "Avec le temps, les inscriptions peuvent perdre de leur éclat. La remise en peinture des lettres gravées permet de leur redonner de la lisibilité.",
+      "Avec le temps, les inscriptions sur les pierres tombales peuvent perdre de leur éclat. Je propose la rénovation des lettres gravées par une remise en peinture adaptée, afin de redonner de la lisibilité aux noms et aux inscriptions commémoratives.",
     prix: null,
     details: [
       "Examen de l'état des inscriptions",
@@ -38,9 +38,9 @@ export const prestations = [
   },
   {
     id: "fleurissement",
-    titre: "Fleurissement",
+    titre: "Fleurissement de sépulture",
     texte:
-      "Pour honorer la mémoire de votre proche, des fleurs ou des plantes peuvent être disposées sur la sépulture, selon vos souhaits et au fil des saisons.",
+      "Le fleurissement d'une tombe permet d'honorer la mémoire d'un proche et de conserver un lieu de recueillement accueillant. Je peux disposer des fleurs ou des plantes sur la sépulture, selon vos souhaits et au fil des saisons.",
     prix: null,
     details: [
       "Choix des fleurs ou des plantes selon vos souhaits",
@@ -54,7 +54,7 @@ export const prestations = [
     id: "bougie",
     titre: "Bougie du souvenir",
     texte:
-      "À votre demande, une bougie est allumée en mémoire de votre proche. Un geste symbolique pour faire vivre le souvenir, même lorsque vous ne pouvez pas vous déplacer.",
+      "Pour honorer la mémoire de votre proche, je propose l'allumage d'une bougie du souvenir devant sa sépulture. Un geste symbolique et attentionné pour faire vivre le souvenir, même lorsque vous ne pouvez pas vous déplacer.",
     prix: null,
     details: [
       "Prise en compte de votre demande",
@@ -66,13 +66,14 @@ export const prestations = [
 ];
 
 
+
 export const formules = [
   {
     id: "essentielle",
     nom: "Formule essentielle",
     passages: null,
     description:
-      "Un entretien ponctuel pour garder une sépulture propre et soignée, avec un compte rendu pour rester informé à distance.",
+      "Une prestation ponctuelle de nettoyage et d'entretien de tombe pour conserver une sépulture propre et soignée, avec un bilan photographique après intervention.",
     inclus: [
       "Nettoyage complet de la sépulture",
       "Nettoyage des plaques et des ornements",
@@ -88,7 +89,7 @@ export const formules = [
     nom: "Formule sérénité",
     passages: null,
     description:
-      "Un suivi régulier pour prendre soin de la sépulture tout au long de l'année et vous permettre de garder l'esprit tranquille.",
+      "Un entretien régulier de la sépulture tout au long de l'année, avec des passages programmés, un suivi visuel et un bilan photographique après chaque intervention.",
     inclus: [
       "Tous les services de la formule essentielle",
       "Passages d'entretien réguliers",
@@ -105,7 +106,7 @@ export const formules = [
     nom: "Formule mémoire",
     passages: null,
     description:
-      "Une attention plus complète portée au lieu de recueillement de votre proche, avec des prestations complémentaires pour entretenir et honorer sa mémoire.",
+      "Un accompagnement complet pour l'entretien et la rénovation de votre sépulture : nettoyage, fleurissement, rénovation des inscriptions et gestes du souvenir.",
     inclus: [
       "Tous les services de la formule sérénité",
       "Suivi d'entretien renforcé",
@@ -123,7 +124,23 @@ export const formules = [
 
 
 
-export const frais = { gratuitA: "Gestel", rayonKm: 30, prixKm: "0,50" };
+export const frais = {
+  gratuitA: "Gestel",
+  rayonKm: 30,
+  prixKm: "0,50",
+  villes: [
+    "Gestel",
+    "Lorient",
+    "Quéven",
+    "Guidel",
+    "Ploemeur",
+    "Hennebont",
+    "Lanester",
+    "Caudan",
+    "Pont-Scorff",
+    "Larmor-Plage",
+  ],
+};
 
 export const lecture = {
   types: ["Texte religieux", "Poème ou citation", "Texte écrit par vous"], // TODO : à valider avec Céline
@@ -132,8 +149,8 @@ export const lecture = {
 
 export const faq = [
   {
-    q: "Jusqu’où intervenez-vous ?",
-    r: "J'interviens dans un rayon de 30 km autour de Gestel. Le déplacement est gratuit à Gestel. Au-delà, des frais de déplacement de 0,50 € par kilomètre s'appliquent.",
+    q: "Dans quelles communes intervenez-vous pour l'entretien des sépultures ?",
+    r: "Basée à Gestel, j'interviens dans un rayon d'environ 30 km pour le nettoyage, l'entretien et le fleurissement des sépultures. Je me déplace notamment à Lorient, Quéven, Guidel, Ploemeur, Hennebont et dans les communes environnantes.",
   },
   {
     q: "Comment puis-je payer ?",
