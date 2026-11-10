@@ -6,9 +6,6 @@ import "./globals.css";
 const corps = Tinos({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-corps" });
 const titre = Pinyon_Script({ subsets: ["latin"], weight: "400", variable: "--font-titre" });
 
-
-import type { Metadata } from "next";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://gardien-de-memoire-bretagne.fr"),
 
