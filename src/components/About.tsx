@@ -16,7 +16,7 @@ export default function About() {
             <p className="text-lg italic text-rose">Une présence, même à distance</p>
 
             <h2 id="about-title" className="mt-2 font-script text-5xl leading-tight text-vert sm:text-6xl">
-              À propos de moi
+              À propos de moi,
             </h2>
 
             <div className="mt-6 flex items-center gap-3" aria-hidden="true">
@@ -25,7 +25,7 @@ export default function About() {
             </div>
 
             <p className="mt-7 text-lg leading-8 text-gris">
-              Je m’appelle Céline Six. Et je suis confrontée à l'eloignement de là sépulture des êtres que j'aime, c'est pourquoi je me propose de prendre soin de là dernière demeure de vos proches, comme s'il s'agissait des miens.
+              Je m’appelle Céline Six. Je suis confrontée à l’éloignement de la sépulture des êtres que j’aime. C’est pourquoi je me propose de prendre soin de la dernière demeure de vos proches, comme s’il s’agissait des miens.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-gris">
