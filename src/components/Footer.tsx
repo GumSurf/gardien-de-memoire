@@ -26,9 +26,18 @@ function OrnementFooter() {
 }
 
 const liensLegaux = [
-  { href: "/mentions-legales", label: "Mentions légales" },
-  { href: "/confidentialite", label: "Confidentialité" },
-  { href: "/cgv", label: "Conditions générales de vente" },
+  {
+    href: "/mentionslegales",
+    label: "Mentions légales",
+  },
+  {
+    href: "/politiqueconfidentialite",
+    label: "Politique de confidentialité",
+  },
+  {
+    href: "/CGV",
+    label: "Conditions générales de vente",
+  },
 ];
 
 export default function Footer() {

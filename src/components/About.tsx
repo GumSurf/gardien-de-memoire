@@ -25,7 +25,7 @@ export default function About() {
             </div>
 
             <p className="mt-7 text-lg leading-8 text-gris">
-              Je m’appelle Céline Six. Quand on ne peut pas se rendre aussi souvent qu’on le souhaiterait auprès d’un proche disparu, je prends le relais : je veille sur sa dernière demeure comme je le ferais pour la mienne.
+              Je m’appelle Céline Six. Et je suis confrontée à l'eloignement de là sépulture des êtres que j'aime, c'est pourquoi je me propose de prendre soin de là dernière demeure de vos proches, comme s'il s'agissait des miens.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-gris">

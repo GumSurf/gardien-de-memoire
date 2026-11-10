@@ -172,7 +172,7 @@ export const faq = [
 
 
 export const citation = {
-  texte: "Je t'aime dans le temps. Je t'aimerai jusqu'au bout du temps. Et quand le temps sera écoulé, alors, je t'aurai aimée. Et rien de cet amour, comme rien de ce qui a été, ne pourra jamais être effacé.", // TODO : citation à vérifier avec Céline, ou à remplacer par une autre citation si elle le souhaite
+  texte: "Il y a quelque chose de plus fort que la mort, c'est la présence des absents dans la mémoire des vivants.",
   auteur: "Jean d’Ormesson",
 };
 
