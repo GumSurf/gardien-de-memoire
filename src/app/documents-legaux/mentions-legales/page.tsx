@@ -36,9 +36,9 @@ function LegalPage({
 
         <nav className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-vert">
           <a className="underline-offset-4 hover:underline" href="/">Accueil</a>
-          <a className="underline-offset-4 hover:underline" href="/mentions-legales">Mentions légales</a>
-          <a className="underline-offset-4 hover:underline" href="/cgv">CGV</a>
-          <a className="underline-offset-4 hover:underline" href="/politique-confidentialite">Confidentialité</a>
+          <a className="underline-offset-4 hover:underline" href="/documents-legaux/mentions-legales">Mentions légales</a>
+          <a className="underline-offset-4 hover:underline" href="/documents-legaux/cgv">CGV</a>
+          <a className="underline-offset-4 hover:underline" href="/documents-legaux/politique-confidentialite">Confidentialité</a>
         </nav>
       </div>
     </main>
@@ -126,11 +126,6 @@ export default function MentionsLegalesPage() {
           dans les limites prévues par la loi.
         </p>
       </Section>
-
-      <p className="border-t border-vert/10 pt-5 text-xs leading-6 text-gris/70">
-        Les informations signalées « À COMPLÉTER » doivent être renseignées avant
-        la mise en ligne du site.
-      </p>
     </LegalPage>
   );
 }

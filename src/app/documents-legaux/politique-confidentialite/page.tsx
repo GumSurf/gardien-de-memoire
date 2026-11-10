@@ -112,12 +112,23 @@ export default function PolitiqueConfidentialitePage() {
           accessibles aux prestataires techniques intervenant dans le
           fonctionnement du site, dans la limite de leurs missions.
         </p>
-        <p>
-          Le site est hébergé par Vercel Inc. Certains traitements techniques
-          peuvent être réalisés par Vercel ou ses sous-traitants. Les données ne
-          sont pas communiquées à des tiers à des fins de vente ou de publicité
-          par {contact.brand}.
-        </p>
+        <Section title="Hébergement du site">
+          Le site est hébergé par Vercel Inc., dont le siège social
+          est situé aux États-Unis. L'utilisation de ce service peut
+          entraîner le traitement de certaines données techniques,
+          notamment les adresses IP, les informations relatives au
+          navigateur et les journaux de connexion, nécessaires au
+          fonctionnement et à la sécurité du site.
+
+          Certaines données peuvent être traitées ou transférées
+          en dehors de l'Union européenne, notamment aux États-Unis.
+          Vercel indique que ses infrastructures et ses sous-traitants
+          peuvent intervenir dans plusieurs pays.
+
+          Pour plus d'informations, vous pouvez consulter la politique
+          de confidentialité de Vercel :
+          https://vercel.com/legal/privacy-policy
+        </Section>
       </Section>
 
       <Section title="Article 5 – Hébergement et transferts hors Espace économique européen">
@@ -214,12 +225,6 @@ export default function PolitiqueConfidentialitePage() {
           applicable est celle publiée sur le site à la date de consultation.
         </p>
       </Section>
-
-      <p className="border-t border-vert/10 pt-5 text-xs leading-6 text-gris/70">
-        Cette politique doit être adaptée aux outils effectivement utilisés,
-        aux durées de conservation réelles et aux garanties contractuelles du
-        compte Vercel avant publication.
-      </p>
     </LegalPage>
   );
 }

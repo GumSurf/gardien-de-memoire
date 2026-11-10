@@ -27,15 +27,15 @@ function OrnementFooter() {
 
 const liensLegaux = [
   {
-    href: "/mentionslegales",
+    href: "/documents-legaux/mentions-legales",
     label: "Mentions légales",
   },
   {
-    href: "/politiqueconfidentialite",
+    href: "/documents-legaux/politique-confidentialite",
     label: "Politique de confidentialité",
   },
   {
-    href: "/CGV",
+    href: "/documents-legaux/cgv",
     label: "Conditions générales de vente",
   },
 ];

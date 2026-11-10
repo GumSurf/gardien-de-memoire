@@ -267,11 +267,6 @@ export default function CGVPage() {
           les règles légales de compétence juridictionnelle s'appliquent.
         </p>
       </Section>
-
-      <p className="border-t border-vert/10 pt-5 text-xs leading-6 text-gris/70">
-        Ces CGV doivent être adaptées aux pratiques réelles de l'entreprise et
-        complétées avant leur communication aux clients.
-      </p>
     </LegalPage>
   );
 }
