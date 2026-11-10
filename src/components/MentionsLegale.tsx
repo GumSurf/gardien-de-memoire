@@ -1,12 +1,3 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Mentions légales | Gardien de mémoire",
-  description: "Mentions légales du site Gardien de mémoire, entretien et fleurissement de sépultures à Gestel et dans le Morbihan.",
-  alternates: { canonical: "https://gardien-de-memoire-bretagne.fr/documents-legaux/mentions-legales" },
-};
-
-
 const contact = {
   name: "Céline Six",
   brand: "Gardien de mémoire",

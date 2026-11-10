@@ -1,12 +1,3 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Politique de confidentialité | Gardien de mémoire",
-  description: "Politique de confidentialité et informations sur le traitement des données personnelles du site Gardien de mémoire.",
-  alternates: { canonical: "https://gardien-de-memoire-bretagne.fr/documents-legaux/politique-confidentialite" },
-};
-
-
 const contact = {
   name: "Céline Six",
   brand: "Gardien de mémoire",
