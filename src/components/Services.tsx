@@ -764,7 +764,9 @@ export default function Services() {
 
                                   {formule.id === "memoire" && (
                                     <span className="shrink-0 text-right font-semibold text-vert">
-                                      {"prix12" in tarif ? tarif.prix12 : tarif.prix}
+                                      {"prix12" in tarif && typeof tarif.prix12 === "string"
+                                        ? tarif.prix12
+                                        : tarif.prix}
                                     </span>
                                   )}
                                 </li>
@@ -803,7 +805,9 @@ export default function Services() {
 
                                   {formule.id === "memoire" && (
                                     <span className="shrink-0 text-right font-semibold text-vert">
-                                      {"prix12" in tarif ? tarif.prix12 : tarif.prix}
+                                      {"prix12" in tarif && typeof tarif.prix12 === "string"
+                                        ? tarif.prix12
+                                        : tarif.prix}
                                     </span>
                                   )}
                                 </li>
@@ -842,7 +846,9 @@ export default function Services() {
 
                                 {formule.id === "memoire" && (
                                   <span className="shrink-0 text-right font-semibold text-vert">
-                                    {"prix12" in tarif ? tarif.prix12 : tarif.prix}
+                                    {"prix12" in tarif && typeof tarif.prix12 === "string"
+                                      ? tarif.prix12
+                                      : tarif.prix}
                                   </span>
                                 )}
                               </li>
