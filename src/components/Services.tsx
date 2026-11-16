@@ -735,87 +735,90 @@ export default function Services() {
 
                     <div className="mt-4 space-y-6">
                       {/* Nettoyage */}
-                      {formule.tarifs.nettoyage.length > 0 && (
-                        <div>
-                          <h5 className="mb-3 text-sm font-semibold text-vert">
-                            Nettoyage
-                          </h5>
+                      {Array.isArray(formule.tarifs.nettoyage) &&
+                        formule.tarifs.nettoyage.length > 0 && (
+                          <div>
+                            <h5 className="mb-3 text-sm font-semibold text-vert">
+                              Nettoyage
+                            </h5>
 
-                          {formule.id === "memoire" && (
-                            <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
-                              <span></span>
-                              <span className="text-right">6 passages</span>
-                              <span className="text-right">12 passages</span>
-                            </div>
-                          )}
+                            {formule.id === "memoire" && (
+                              <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
+                                <span></span>
+                                <span className="text-right">6 passages</span>
+                                <span className="text-right">12 passages</span>
+                              </div>
+                            )}
 
-                          <ul className="space-y-3">
-                            {formule.tarifs.nettoyage.map((tarif) => (
-                              <li
-                                key={tarif.nom}
-                                className="grid grid-cols-[1fr_auto_auto] items-center gap-3 text-sm"
-                              >
-                                <span className="text-gris">{tarif.nom}</span>
+                            <ul className="space-y-3">
+                              {formule.tarifs.nettoyage.map((tarif) => (
+                                <li
+                                  key={tarif.nom}
+                                  className="grid grid-cols-[1fr_auto_auto] items-center gap-3 text-sm"
+                                >
+                                  <span className="text-gris">{tarif.nom}</span>
 
-                                <span className="shrink-0 text-right font-semibold text-vert">
-                                  {tarif.prix}
-                                </span>
-
-                                {formule.id === "memoire" && (
                                   <span className="shrink-0 text-right font-semibold text-vert">
-                                    {tarif.prix12}
+                                    {tarif.prix}
                                   </span>
-                                )}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+
+                                  {formule.id === "memoire" && (
+                                    <span className="shrink-0 text-right font-semibold text-vert">
+                                      {"prix12" in tarif ? tarif.prix12 : tarif.prix}
+                                    </span>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
 
                       {/* Fleurissement */}
-                      {formule.tarifs.fleurissement.length > 0 && (
-                        <div>
-                          <h5 className="mb-3 text-sm font-semibold text-vert">
-                            Fleurissement
-                          </h5>
+                      {Array.isArray(formule.tarifs.fleurissement) &&
+                        formule.tarifs.fleurissement.length > 0 && (
+                          <div>
+                            <h5 className="mb-3 text-sm font-semibold text-vert">
+                              Fleurissement
+                            </h5>
 
-                          {formule.id === "memoire" && (
-                            <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
-                              <span></span>
-                              <span className="text-right">6 passages</span>
-                              <span className="text-right">12 passages</span>
-                            </div>
-                          )}
+                            {formule.id === "memoire" && (
+                              <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
+                                <span></span>
+                                <span className="text-right">6 passages</span>
+                                <span className="text-right">12 passages</span>
+                              </div>
+                            )}
 
-                          <ul className="space-y-3">
-                            {formule.tarifs.fleurissement.map((tarif) => (
-                              <li
-                                key={tarif.nom}
-                                className="grid grid-cols-[1fr_auto_auto] items-center gap-3 text-sm"
-                              >
-                                <span className="text-gris">{tarif.nom}</span>
+                            <ul className="space-y-3">
+                              {formule.tarifs.fleurissement.map((tarif) => (
+                                <li
+                                  key={tarif.nom}
+                                  className="grid grid-cols-[1fr_auto_auto] items-center gap-3 text-sm"
+                                >
+                                  <span className="text-gris">{tarif.nom}</span>
 
-                                <span className="shrink-0 text-right font-semibold text-vert">
-                                  {tarif.prix}
-                                </span>
-
-                                {formule.id === "memoire" && (
                                   <span className="shrink-0 text-right font-semibold text-vert">
-                                    {tarif.prix12}
+                                    {tarif.prix}
                                   </span>
-                                )}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+
+                                  {formule.id === "memoire" && (
+                                    <span className="shrink-0 text-right font-semibold text-vert">
+                                      {"prix12" in tarif ? tarif.prix12 : tarif.prix}
+                                    </span>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
 
                       {/* Rénovation */}
-                      {formule.tarifs.renovation?.length > 0 && (
-                        <div>
-                          <h5 className="mb-3 text-sm font-semibold text-vert">
-                            Rénovation des lettres
-                          </h5>
+                      {Array.isArray(formule.tarifs.renovation) &&
+                        formule.tarifs.renovation.length > 0 && (
+                          <div>
+                            <h5 className="mb-3 text-sm font-semibold text-vert">
+                              Rénovation des lettres
+                            </h5>
 
                           {formule.id === "memoire" && (
                             <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
@@ -839,7 +842,7 @@ export default function Services() {
 
                                 {formule.id === "memoire" && (
                                   <span className="shrink-0 text-right font-semibold text-vert">
-                                    {tarif.prix12}
+                                    {"prix12" in tarif ? tarif.prix12 : tarif.prix}
                                   </span>
                                 )}
                               </li>
