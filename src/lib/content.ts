@@ -1,7 +1,8 @@
+
 export const contact = {
   nom: "Céline Six",
-  tel: "06 82 51 83 36", // TODO
-  mail: "contact@gardien-de-memoire-bretagne.fr", // TODO
+  tel: "06 82 51 83 36", // TODO : à vérifier
+  mail: "contact@gardien-de-memoire-bretagne.fr", // TODO : à vérifier
   ville: "Gestel (56)",
   siret: "102 382 017 00014",
   siren: "102 382 017",
@@ -12,27 +13,29 @@ export const prestations = [
     id: "nettoyage",
     titre: "Nettoyage et entretien de sépulture",
     texte:
-      "Je réalise le nettoyage complet de votre tombe et de votre monument funéraire afin de préserver la pierre tombale, les plaques et les ornements. Un entretien soigné, réalisé dans le respect des matériaux et de la mémoire de vos proches.",
-    prix: null,
+      "Je prends soin de votre sépulture en nettoyant le monument et ses abords, dans le respect des matériaux et de la mémoire de vos proches.",
+    tarifs: [
+      { nom: "Pierre lisse", prix: "65 €" },
+      { nom: "Pierre brute", prix: "À partir de 160 €" },
+    ],
     details: [
-      "Nettoyage de la pierre tombale et du monument funéraire",
-      "Nettoyage des plaques et des ornements",
-      "Désherbage et retrait des mousses",
-      "Entretien des abords de la sépulture",
-      "Bilan photographique envoyé par e-mail",
+      "Nettoyage du monument et des ornements",
+      "Désherbage et entretien des abords",
+      "Bilan photographique après intervention",
     ],
   },
   {
     id: "lettres",
     titre: "Rénovation des lettres gravées",
     texte:
-      "Avec le temps, les inscriptions sur les pierres tombales peuvent perdre de leur éclat. Je propose la rénovation des lettres gravées par une remise en peinture adaptée, afin de redonner de la lisibilité aux noms et aux inscriptions commémoratives.",
-    prix: null,
+      "Avec le temps, les inscriptions peuvent perdre de leur éclat. Je leur redonne de la lisibilité grâce à une rénovation adaptée.",
+    tarifs: [
+      { nom: "Peinture", prix: "35 €" },
+      { nom: "Feuille d'or", prix: "45 €" },
+    ],
     details: [
-      "Examen de l'état des inscriptions",
-      "Préparation des lettres à rénover",
-      "Remise en peinture des lettres gravées",
-      "Rénovation des inscriptions sur les plaques",
+      "Préparation des inscriptions",
+      "Remise en peinture ou application de feuille d'or",
       "Bilan photographique après intervention",
     ],
   },
@@ -40,13 +43,16 @@ export const prestations = [
     id: "fleurissement",
     titre: "Fleurissement de sépulture",
     texte:
-      "Le fleurissement d'une tombe permet d'honorer la mémoire d'un proche et de conserver un lieu de recueillement accueillant. Je peux disposer des fleurs ou des plantes sur la sépulture, selon vos souhaits et au fil des saisons.",
-    prix: null,
+      "Honorez la mémoire de vos proches avec un fleurissement adapté à vos souhaits et aux saisons, pour conserver un lieu de recueillement accueillant.",
+    tarifs: [
+      { nom: "Petit fleurissement", prix: "30 €" },
+      { nom: "Fleurissement moyen", prix: "45 €" },
+      { nom: "Grand fleurissement", prix: "60 €" },
+      { nom: "Composition", prix: "100 €" },
+    ],
     details: [
-      "Choix des fleurs ou des plantes selon vos souhaits",
-      "Fleurissement adapté à la saison",
-      "Mise en place des compositions florales",
-      "Disposition soignée sur la sépulture",
+      "Choix des fleurs selon vos souhaits",
+      "Mise en place de compositions florales",
       "Bilan photographique après intervention",
     ],
   },
@@ -54,75 +60,90 @@ export const prestations = [
     id: "bougie",
     titre: "Bougie du souvenir",
     texte:
-      "Pour honorer la mémoire de votre proche, je propose l'allumage d'une bougie du souvenir devant sa sépulture. Un geste symbolique et attentionné pour faire vivre le souvenir, même lorsque vous ne pouvez pas vous déplacer.",
-    prix: null,
+      "Un geste symbolique pour honorer la mémoire d'un proche : je dépose et allume une bougie devant sa sépulture, même lorsque vous ne pouvez pas vous déplacer.",
+    tarifs: [
+      { nom: "Petite bougie", prix: "5 €" },
+      { nom: "Grande bougie", prix: "10 €" },
+    ],
     details: [
-      "Prise en compte de votre demande",
       "Allumage d'une bougie en mémoire de votre proche",
-      "Moment de recueillement devant la sépulture",
-      "Photographie du geste du souvenir",
+      "Moment de recueillement",
+      "Photographie après intervention",
     ],
   },
 ];
-
-
 
 export const formules = [
   {
     id: "essentielle",
     nom: "Formule essentielle",
-    passages: null,
+    passages: "2 passages par an",
     description:
-      "Une prestation ponctuelle de nettoyage et d'entretien de tombe pour conserver une sépulture propre et soignée, avec un bilan photographique après intervention.",
-    inclus: [
-      "Nettoyage complet de la sépulture",
-      "Nettoyage des plaques et des ornements",
-      "Désherbage et entretien des abords",
-      "Bilan photographique après intervention",
+      "L'essentiel pour garder une sépulture propre et entretenue tout au long de l'année.",
+    tarifs: [
+      { nom: "Nettoyage pierre lisse", prix: "120 € / an" },
+      { nom: "Nettoyage pierre brute", prix: "À partir de 300 € / an" },
     ],
-    mensualite: null,
-    total: null,
+    inclus: [
+      "Nettoyage de la sépulture et des ornements",
+      "Entretien des abords",
+      "Bilan photographique après chaque passage",
+    ],
     miseEnAvant: false,
   },
   {
     id: "serenite",
     nom: "Formule sérénité",
-    passages: null,
+    passages: "4 passages par an",
     description:
-      "Un entretien régulier de la sépulture tout au long de l'année, avec des passages programmés, un suivi visuel et un bilan photographique après chaque intervention.",
+      "Un suivi régulier pour prendre soin de la sépulture et de son fleurissement au fil des saisons.",
+    tarifs: [
+      { nom: "Nettoyage pierre lisse", prix: "235 € / an" },
+      { nom: "Nettoyage pierre brute", prix: "610 € / an" },
+      { nom: "Petit fleurissement", prix: "100 € / an" },
+      { nom: "Fleurissement moyen", prix: "160 € / an" },
+      { nom: "Grand fleurissement", prix: "200 € / an" },
+      { nom: "Composition", prix: "380 € / an" },
+    ],
     inclus: [
       "Tous les services de la formule essentielle",
-      "Passages d'entretien réguliers",
-      "Surveillance visuelle de l'état général de la sépulture",
+      "Entretien régulier et suivi visuel",
+      "Fleurissement selon les saisons",
       "Bilan photographique après chaque passage",
-      "Fleurissement à certaines périodes de l'année",
     ],
-    mensualite: null,
-    total: null,
     miseEnAvant: true,
   },
   {
     id: "memoire",
     nom: "Formule mémoire",
-    passages: null,
+    passages: "6 à 12 passages par an",
     description:
-      "Un accompagnement complet pour l'entretien et la rénovation de votre sépulture : nettoyage, fleurissement, rénovation des inscriptions et gestes du souvenir.",
+      "Un accompagnement complet et régulier, avec un entretien renforcé et des attentions particulières pour votre proche.",
+    tarifs: [
+      { nom: "Pierre lisse - 6 passages", prix: "375 € / an" },
+      { nom: "Pierre lisse - 12 passages", prix: "730 € / an" },
+      { nom: "Pierre brute - 6 passages", prix: "950 € / an" },
+      { nom: "Pierre brute - 12 passages", prix: "1 870 € / an" },
+      { nom: "Petit fleurissement - 6 passages", prix: "160 € / an" },
+      { nom: "Petit fleurissement - 12 passages", prix: "300 € / an" },
+      { nom: "Fleurissement moyen - 6 passages", prix: "245 € / an" },
+      { nom: "Fleurissement moyen - 12 passages", prix: "475 € / an" },
+      { nom: "Grand fleurissement - 6 passages", prix: "340 € / an" },
+      { nom: "Grand fleurissement - 12 passages", prix: "660 € / an" },
+      { nom: "Composition - 6 passages", prix: "550 € / an" },
+    ],
     inclus: [
       "Tous les services de la formule sérénité",
-      "Suivi d'entretien renforcé",
-      "Fleurissement plus fréquent selon les saisons",
-      "Rénovation des lettres gravées selon les besoins",
+      "Entretien et fleurissement renforcés",
+      "Rénovation des lettres gravées une fois par an",
       "Bougie du souvenir à la demande",
       "Bilan photographique après chaque passage",
     ],
-    mensualite: null,
-    total: null,
+    note:
+      "La bougie du souvenir est proposée à la demande. La formule peut être adaptée selon vos besoins.",
     miseEnAvant: false,
   },
 ];
-
-
-
 
 export const frais = {
   gratuitA: "Gestel",
@@ -143,36 +164,38 @@ export const frais = {
 };
 
 export const lecture = {
-  types: ["Texte religieux", "Poème ou citation", "Texte écrit par vous"], // TODO : à valider avec Céline
+  types: [
+    "Texte religieux",
+    "Poème ou citation",
+    "Texte écrit par vous",
+  ], // TODO : à valider avec Céline
 };
-
 
 export const faq = [
   {
-    q: "Dans quelles communes intervenez-vous pour l'entretien des sépultures ?",
-    r: "Basée à Gestel, j'interviens dans un rayon d'environ 30 km pour le nettoyage, l'entretien et le fleurissement des sépultures. Je me déplace notamment à Lorient, Quéven, Guidel, Ploemeur, Hennebont et dans les communes environnantes.",
+    q: "Dans quelles communes intervenez-vous ?",
+    r: "Basée à Gestel, j'interviens dans un rayon d'environ 30 km, notamment à Lorient, Quéven, Guidel, Ploemeur, Hennebont et dans les communes environnantes.",
   },
   {
     q: "Comment puis-je payer ?",
-    r: "Le règlement s'effectue par virement bancaire. Les modalités de paiement vous seront précisées lors de l'établissement de votre devis.",
+    r: "Le règlement s'effectue à l'avance, par virement bancaire ou par chèque.",
   },
   {
-    q: "Comment suivre l’état de la sépulture après votre passage ?",
-    r: "Après chaque prestation, je vous adresse un bilan photographique par e-mail afin que vous puissiez constater le travail réalisé, même si vous habitez loin du cimetière.",
+    q: "Comment suivre l'état de la sépulture après votre passage ?",
+    r: "Je vous adresse un bilan photographique par e-mail après chaque prestation, pour vous permettre de suivre l'entretien même à distance.",
   },
   {
     q: "Quelle est la lecture de texte offerte ?",
-    r: "À votre demande, je peux lire un texte devant la sépulture après la prestation, sans supplément. Il peut s'agir d'un poème, d'une citation ou d'un texte personnel, sous réserve des modalités proposées.",
+    r: "À votre demande, je peux lire un texte devant la sépulture après la prestation, sans supplément : poème, citation ou texte personnel.",
   },
   {
     q: "Pouvez-vous repeindre les lettres gravées ?",
-    r: "Oui, je propose la remise en peinture des lettres gravées sur les pierres tombales et les plaques, afin de leur redonner de la lisibilité.",
+    r: "Oui, je propose la rénovation des lettres gravées par une remise en peinture ou une application de feuille d'or.",
   },
 ];
 
-
 export const citation = {
-  texte: "Il y a quelque chose de plus fort que la mort, c'est la présence des absents dans la mémoire des vivants.",
+  texte:
+    "Il y a quelque chose de plus fort que la mort, c'est la présence des absents dans la mémoire des vivants.",
   auteur: "Jean d’Ormesson",
 };
-

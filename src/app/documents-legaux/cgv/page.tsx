@@ -255,10 +255,6 @@ export default function CGVPage() {
           satisfaisante, le consommateur peut saisir gratuitement le médiateur
           de la consommation désigné par l'entreprise.
         </p>
-        <p className="font-semibold text-rose">
-          À COMPLÉTER AVANT PUBLICATION : nom, adresse postale et site internet
-          du médiateur de la consommation compétent.
-        </p>
       </Section>
 
       <Section title="Article 14 – Droit applicable">
