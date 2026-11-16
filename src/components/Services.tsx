@@ -727,31 +727,133 @@ export default function Services() {
 
 
 
+
                   <div className="my-6 border-y border-[#D9B979]/50 py-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-gris">
                       Tarifs annuels
                     </p>
 
-                    <ul className="mt-3 space-y-3">
-                      {formule.tarifs.map((tarif) => (
-                        <li
-                          key={tarif.nom}
-                          className="flex items-start justify-between gap-3 text-sm"
-                        >
-                          <span className="leading-6 text-gris">
-                            {tarif.nom}
-                          </span>
-                          <span className="shrink-0 font-semibold text-vert">
-                            {tarif.prix}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="mt-4 space-y-6">
+                      {/* Nettoyage */}
+                      {formule.tarifs.nettoyage.length > 0 && (
+                        <div>
+                          <h5 className="mb-3 text-sm font-semibold text-vert">
+                            Nettoyage
+                          </h5>
 
-                    <p className="mt-4 text-sm text-gris">
+                          {formule.id === "memoire" && (
+                            <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
+                              <span></span>
+                              <span className="text-right">6 passages</span>
+                              <span className="text-right">12 passages</span>
+                            </div>
+                          )}
+
+                          <ul className="space-y-3">
+                            {formule.tarifs.nettoyage.map((tarif) => (
+                              <li
+                                key={tarif.nom}
+                                className="grid grid-cols-[1fr_auto_auto] items-center gap-3 text-sm"
+                              >
+                                <span className="text-gris">{tarif.nom}</span>
+
+                                <span className="shrink-0 text-right font-semibold text-vert">
+                                  {tarif.prix}
+                                </span>
+
+                                {formule.id === "memoire" && (
+                                  <span className="shrink-0 text-right font-semibold text-vert">
+                                    {tarif.prix12}
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Fleurissement */}
+                      {formule.tarifs.fleurissement.length > 0 && (
+                        <div>
+                          <h5 className="mb-3 text-sm font-semibold text-vert">
+                            Fleurissement
+                          </h5>
+
+                          {formule.id === "memoire" && (
+                            <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
+                              <span></span>
+                              <span className="text-right">6 passages</span>
+                              <span className="text-right">12 passages</span>
+                            </div>
+                          )}
+
+                          <ul className="space-y-3">
+                            {formule.tarifs.fleurissement.map((tarif) => (
+                              <li
+                                key={tarif.nom}
+                                className="grid grid-cols-[1fr_auto_auto] items-center gap-3 text-sm"
+                              >
+                                <span className="text-gris">{tarif.nom}</span>
+
+                                <span className="shrink-0 text-right font-semibold text-vert">
+                                  {tarif.prix}
+                                </span>
+
+                                {formule.id === "memoire" && (
+                                  <span className="shrink-0 text-right font-semibold text-vert">
+                                    {tarif.prix12}
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Rénovation */}
+                      {formule.tarifs.renovation?.length > 0 && (
+                        <div>
+                          <h5 className="mb-3 text-sm font-semibold text-vert">
+                            Rénovation des lettres
+                          </h5>
+
+                          {formule.id === "memoire" && (
+                            <div className="mb-2 grid grid-cols-[1fr_auto_auto] gap-3 text-xs font-medium text-gris">
+                              <span></span>
+                              <span className="text-right">6 passages</span>
+                              <span className="text-right">12 passages</span>
+                            </div>
+                          )}
+
+                          <ul className="space-y-3">
+                            {formule.tarifs.renovation.map((tarif) => (
+                              <li
+                                key={tarif.nom}
+                                className="grid grid-cols-[1fr_auto_auto] items-center gap-3 text-sm"
+                              >
+                                <span className="text-gris">{tarif.nom}</span>
+
+                                <span className="shrink-0 text-right font-semibold text-vert">
+                                  {tarif.prix}
+                                </span>
+
+                                {formule.id === "memoire" && (
+                                  <span className="shrink-0 text-right font-semibold text-vert">
+                                    {tarif.prix12}
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+
+                    <p className="mt-5 text-sm text-gris">
                       {formule.passages}
                     </p>
                   </div>
+
 
 
                   <p className="text-sm font-semibold text-vert">

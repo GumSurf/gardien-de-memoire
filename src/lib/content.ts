@@ -13,15 +13,15 @@ export const prestations = [
     id: "nettoyage",
     titre: "Nettoyage et entretien de sépulture",
     texte:
-      "Je prends soin de votre sépulture en nettoyant le monument et ses abords, dans le respect des matériaux et de la mémoire de vos proches.",
+      "Je prends soin de la tombe de votre proche en nettoyant le monument et ses abords, dans le respect des matériaux et de la mémoire de vos proches.",
     tarifs: [
       { nom: "Pierre lisse", prix: "65 €" },
-      { nom: "Pierre brute", prix: "À partir de 160 €" },
+      { nom: "Pierre brute (selon la taille de la sépulture)", prix: "À partir de 160 €" },
     ],
     details: [
       "Nettoyage du monument et des ornements",
       "Désherbage et entretien des abords",
-      "Bilan photographique après intervention",
+      "Bilan photographique après chaque passage",
     ],
   },
   {
@@ -73,6 +73,7 @@ export const prestations = [
   },
 ];
 
+
 export const formules = [
   {
     id: "essentielle",
@@ -80,10 +81,13 @@ export const formules = [
     passages: "2 passages par an",
     description:
       "L'essentiel pour garder une sépulture propre et entretenue tout au long de l'année.",
-    tarifs: [
-      { nom: "Nettoyage pierre lisse", prix: "120 € / an" },
-      { nom: "Nettoyage pierre brute", prix: "À partir de 300 € / an" },
-    ],
+    tarifs: {
+      nettoyage: [
+        { nom: "Pierre lisse", prix: "120 € / an" },
+        { nom: "Pierre brute (selon la taille de la sépulture)", prix: "À partir de 300 € / an" },
+      ],
+      fleurissement: [],
+    },
     inclus: [
       "Nettoyage de la sépulture et des ornements",
       "Entretien des abords",
@@ -97,14 +101,18 @@ export const formules = [
     passages: "4 passages par an",
     description:
       "Un suivi régulier pour prendre soin de la sépulture et de son fleurissement au fil des saisons.",
-    tarifs: [
-      { nom: "Nettoyage pierre lisse", prix: "235 € / an" },
-      { nom: "Nettoyage pierre brute", prix: "610 € / an" },
-      { nom: "Petit fleurissement", prix: "100 € / an" },
-      { nom: "Fleurissement moyen", prix: "160 € / an" },
-      { nom: "Grand fleurissement", prix: "200 € / an" },
-      { nom: "Composition", prix: "380 € / an" },
-    ],
+    tarifs: {
+      nettoyage: [
+        { nom: "Pierre lisse", prix: "235 € / an" },
+        { nom: "Pierre brute (selon la taille de la sépulture)", prix: "610 € / an" },
+      ],
+      fleurissement: [
+        { nom: "Petit", prix: "100 € / an" },
+        { nom: "Moyen", prix: "160 € / an" },
+        { nom: "Grand", prix: "200 € / an" },
+        { nom: "Composition", prix: "380 € / an" },
+      ],
+    },
     inclus: [
       "Tous les services de la formule essentielle",
       "Entretien régulier et suivi visuel",
@@ -119,28 +127,62 @@ export const formules = [
     passages: "6 à 12 passages par an",
     description:
       "Un accompagnement complet et régulier, avec un entretien renforcé et des attentions particulières pour votre proche.",
-    tarifs: [
-      { nom: "Pierre lisse - 6 passages", prix: "375 € / an" },
-      { nom: "Pierre lisse - 12 passages", prix: "730 € / an" },
-      { nom: "Pierre brute - 6 passages", prix: "950 € / an" },
-      { nom: "Pierre brute - 12 passages", prix: "1 870 € / an" },
-      { nom: "Petit fleurissement - 6 passages", prix: "160 € / an" },
-      { nom: "Petit fleurissement - 12 passages", prix: "300 € / an" },
-      { nom: "Fleurissement moyen - 6 passages", prix: "245 € / an" },
-      { nom: "Fleurissement moyen - 12 passages", prix: "475 € / an" },
-      { nom: "Grand fleurissement - 6 passages", prix: "340 € / an" },
-      { nom: "Grand fleurissement - 12 passages", prix: "660 € / an" },
-      { nom: "Composition - 6 passages", prix: "550 € / an" },
-    ],
+    tarifs: {
+      nettoyage: [
+        {
+          nom: "Pierre lisse",
+          prix: "375 € / an",
+          prix12: "730 € / an",
+        },
+        {
+          nom: "Pierre brute (selon la taille de la sépulture)",
+          prix: "950 € / an",
+          prix12: "1 870 € / an",
+        },
+      ],
+      fleurissement: [
+        {
+          nom: "Petit",
+          prix: "160 € / an",
+          prix12: "300 € / an",
+        },
+        {
+          nom: "Moyen",
+          prix: "245 € / an",
+          prix12: "475 € / an",
+        },
+        {
+          nom: "Grand",
+          prix: "340 € / an",
+          prix12: "660 € / an",
+        },
+        {
+          nom: "Composition",
+          prix: "550 € / an",
+          prix12: "Sur devis",
+        },
+      ],
+      renovation: [
+        {
+          nom: "Peinture",
+          prix: "30 € / an",
+          prix12: "Sur devis",
+        },
+        {
+          nom: "Feuille d'or",
+          prix: "40 € / an",
+          prix12: "Sur devis",
+        },
+      ],
+    },
     inclus: [
       "Tous les services de la formule sérénité",
       "Entretien et fleurissement renforcés",
-      "Rénovation des lettres gravées une fois par an",
       "Bougie du souvenir à la demande",
       "Bilan photographique après chaque passage",
     ],
     note:
-      "La bougie du souvenir est proposée à la demande. La formule peut être adaptée selon vos besoins.",
+      "La bougie du souvenir est offerte à la demande. La formule peut être adaptée selon vos besoins.",
     miseEnAvant: false,
   },
 ];
