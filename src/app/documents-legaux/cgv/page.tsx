@@ -247,13 +247,25 @@ export default function CGVPage() {
         <p>
           Pour toute question ou réclamation, le client peut contacter
           {` ${contact.brand}`} à l'adresse{" "}
-          <a className="text-vert underline" href={`mailto:${contact.email}`}>{contact.email}</a>
+          <a
+            className="text-vert underline"
+            href={`mailto:${contact.email}`}
+          >
+            {contact.email}
+          </a>
           {" "}ou au {contact.phone}. Une solution amiable sera recherchée en priorité.
         </p>
+
         <p>
           Après une réclamation écrite préalable restée sans solution
-          satisfaisante, le consommateur peut saisir gratuitement le médiateur
-          de la consommation désigné par l'entreprise.
+          satisfaisante, le consommateur peut saisir gratuitement le
+          médiateur de la consommation :
+        </p>
+
+        <p>
+          <strong>Nom du médiateur :</strong> La Société Médiation Professionnelle<br />
+          <strong>Adresse :</strong> Alteritae 5, rue Salvaing, 12000 Rodez<br />
+          <strong>Site internet :</strong> www.mediateur-consommation-smp.fr
         </p>
       </Section>
 
