@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Conditions générales de vente | Gardien de mémoire",
@@ -44,10 +45,10 @@ function LegalPage({
         </article>
 
         <nav className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-vert">
-          <a className="underline-offset-4 hover:underline" href="/">Accueil</a>
-          <a className="underline-offset-4 hover:underline" href="/documents-legaux/mentions-legales">Mentions légales</a>
-          <a className="underline-offset-4 hover:underline" href="/documents-legaux/cgv">CGV</a>
-          <a className="underline-offset-4 hover:underline" href="/documents-legaux/politique-confidentialite">Confidentialité</a>
+          <Link className="underline-offset-4 hover:underline" href="/">Accueil</Link>
+          <Link className="underline-offset-4 hover:underline" href="/documents-legaux/mentions-legales">Mentions légales</Link>
+          <Link className="underline-offset-4 hover:underline" href="/documents-legaux/cgv">CGV</Link>
+          <Link className="underline-offset-4 hover:underline" href="/documents-legaux/politique-confidentialite">Confidentialité</Link>
         </nav>
       </div>
     </main>
@@ -78,8 +79,8 @@ export default function CGVPage() {
     >
       <Section title="Article 1 – Objet">
         <p>
-          Les présentes conditions générales de vente (CGV) s'appliquent aux
-          prestations d'entretien et d'accompagnement des sépultures proposées
+          LLes présentes conditions générales de vente (CGV) s&apos;appliquent aux
+          prestations d&apos;entretien et d&apos;accompagnement des sépultures proposées
           par {contact.brand} à des particuliers.
         </p>
         <ul className="list-inside list-disc space-y-1">
@@ -87,7 +88,7 @@ export default function CGVPage() {
           <li>Rénovation des lettres gravées ;</li>
           <li>Fleurissement des tombes ;</li>
           <li>Bougie du souvenir ;</li>
-          <li>Formules d'entretien ponctuel ou régulier ;</li>
+          <li>Formules d&apos;entretien ponctuel ou régulier ;</li>
           <li>Prestations complémentaires définies dans un devis.</li>
         </ul>
       </Section>
@@ -97,26 +98,26 @@ export default function CGVPage() {
           Chaque intervention est réalisée avec attention, dans le respect des
           matériaux, des ornements et du caractère particulier du lieu. Selon le
           devis accepté, les prestations peuvent comprendre le nettoyage de la
-          pierre tombale, des plaques et ornements, le désherbage, l'entretien
+          pierre tombale, des plaques et ornements, le désherbage, l&apos;entretien
           des abords, la rénovation des inscriptions, le fleurissement ou
-          l'allumage d'une bougie lorsque le règlement du cimetière et les
+          l&apos;allumage d&apos;une bougie lorsque le règlement du cimetière et les
           conditions de sécurité le permettent.
         </p>
         <p>
-          Un bilan photographique peut être envoyé au client après l'intervention,
+          Un bilan photographique peut être envoyé au client après l&apos;intervention,
           selon la prestation convenue. Le détail exact de chaque prestation est
           précisé dans le devis accepté.
         </p>
       </Section>
 
-      <Section title="Article 3 – Zone d'intervention et frais de déplacement">
+      <Section title="Article 3 – Zone d&apos;intervention et frais de déplacement">
         <p>
           {contact.brand} intervient dans un rayon indicatif de 30 kilomètres
           autour de Gestel (56). Le déplacement est gratuit à Gestel. Au-delà,
           des frais de déplacement de 0,50 € par kilomètre peuvent être appliqués,
           selon les conditions précisées dans le devis.
         </p>
-        <p>La possibilité d'intervention est confirmée au client avant toute commande.</p>
+        <p>La possibilité d&apos;intervention est confirmée au client avant toute commande.</p>
       </Section>
 
       <Section title="Article 4 – Devis et commande">
@@ -129,7 +130,7 @@ export default function CGVPage() {
         <p>
           La commande devient définitive après acceptation expresse du devis.
           {` ${contact.brand}`} peut refuser une intervention lorsque les
-          conditions d'accès, de sécurité ou l'état du monument ne permettent
+          conditions d&apos;accès, de sécurité ou l&apos;état du monument ne permettent
           pas de la réaliser dans de bonnes conditions.
         </p>
       </Section>
@@ -142,16 +143,16 @@ export default function CGVPage() {
           de la commande.
         </p>
         <p>
-          Si l'entreprise bénéficie effectivement de la franchise en base de
+          Si l&apos;entreprise bénéficie effectivement de la franchise en base de
           TVA, les devis et factures porteront la mention « TVA non applicable,
           art. 293 B du CGI ». Cette mention doit être retirée si elle ne
-          correspond pas à la situation fiscale de l'entreprise.
+          correspond pas à la situation fiscale de l&apos;entreprise.
         </p>
       </Section>
 
       <Section title="Article 6 – Modalités de paiement">
         <p>
-          Le règlement s'effectue par virement bancaire. Les coordonnées
+          Le règlement s&apos;effectue par virement bancaire. Les coordonnées
           bancaires, les éventuels acomptes et les échéances sont précisés sur
           le devis ou la facture. Le paiement est exigible selon les modalités
           indiquées sur ces documents.
@@ -160,8 +161,8 @@ export default function CGVPage() {
 
       <Section title="Article 7 – Réalisation des prestations">
         <p>
-          La date d'intervention est convenue avec le client selon les
-          disponibilités de {contact.brand} et les conditions d'accès au
+          La date d&apos;intervention est convenue avec le client selon les
+          disponibilités de {contact.brand} et les conditions d&apos;accès au
           cimetière. Une intervention peut être reportée en cas de météo
           défavorable, de restriction du cimetière ou de toute situation
           empêchant sa réalisation dans de bonnes conditions. Le client est
@@ -171,8 +172,8 @@ export default function CGVPage() {
 
       <Section title="Article 8 – Accès à la sépulture et autorisations">
         <p>
-          Le client fournit les informations nécessaires à l'identification de
-          la sépulture et s'assure qu'il est autorisé à demander l'intervention.
+          Le client fournit les informations nécessaires à l&apos;identification de
+          la sépulture et s&apos;assure qu&apos;il est autorisé à demander l&apos;intervention.
           Il signale toute particularité connue concernant le monument, les
           matériaux, les ornements ou les restrictions du cimetière.
         </p>
@@ -183,7 +184,7 @@ export default function CGVPage() {
         <p>
           Les photographies éventuellement transmises ont pour objectif de
           présenter le travail effectué et de permettre au client de constater
-          l'état de la sépulture après intervention. Elles ne sont pas destinées
+          l&apos;état de la sépulture après intervention. Elles ne sont pas destinées
           à une diffusion publique sans autorisation préalable des personnes
           concernées.
         </p>
@@ -191,27 +192,27 @@ export default function CGVPage() {
 
       <Section title="Article 10 – Droit de rétractation">
         <p>
-          Lorsqu'un contrat de prestation de services est conclu à distance avec
-          un consommateur, celui-ci bénéficie en principe d'un délai de
+          Lorsqu&apos;un contrat de prestation de services est conclu à distance avec
+          un consommateur, celui-ci bénéficie en principe d&apos;un délai de
           rétractation de 14 jours à compter de la conclusion du contrat,
           conformément au Code de la consommation.
         </p>
         <p>
           Si le client demande expressément que la prestation commence avant la
           fin de ce délai, il peut être redevable du montant correspondant au
-          service déjà réalisé s'il se rétracte. Le droit de rétractation peut
+          service déjà réalisé s&apos;il se rétracte. Le droit de rétractation peut
           être perdu lorsque la prestation a été entièrement exécutée avant la
           fin du délai, après accord préalable exprès du consommateur et
           reconnaissance de la perte de ce droit.
         </p>
         <p>
           Pour exercer son droit de rétractation, le client peut adresser une
-          déclaration dénuée d'ambiguïté à {contact.brand}, par e-mail ou par
+          déclaration dénuée d&apos;ambiguïté à {contact.brand}, par e-mail ou par
           courrier, en indiquant ses coordonnées, la prestation concernée et la
           date de commande.
         </p>
         <p>
-          Formulaire type : « À l'attention de Céline Six – Gardien de mémoire,
+          Formulaire type : « À l&apos;attention de Céline Six – Gardien de mémoire,
           je vous notifie ma rétractation du contrat portant sur la prestation
           suivante : [prestation]. Commandée le : [date]. Nom : [nom]. Adresse :
           [adresse]. Date : [date]. Signature (uniquement en cas de notification
@@ -221,9 +222,9 @@ export default function CGVPage() {
 
       <Section title="Article 11 – Annulation et report">
         <p>
-          Toute demande d'annulation ou de report doit être communiquée dans les
+          Toute demande d&apos;annulation ou de report doit être communiquée dans les
           meilleurs délais. Les éventuelles conséquences financières dépendent
-          de l'avancement de la prestation, des dépenses déjà engagées, du devis
+          de l&apos;avancement de la prestation, des dépenses déjà engagées, du devis
           accepté et des dispositions légales applicables.
         </p>
       </Section>
@@ -232,7 +233,7 @@ export default function CGVPage() {
         <p>
           Les prestations sont réalisées avec soin et selon des méthodes
           adaptées aux matériaux et aux caractéristiques de la sépulture. En
-          raison de l'ancienneté, de l'état initial ou de la fragilité d'un
+          raison de l&apos;ancienneté, de l&apos;état initial ou de la fragilité d&apos;un
           monument, certaines traces ou dégradations peuvent ne pas pouvoir être
           supprimées. Aucun résultat esthétique identique sur tous les supports
           ne peut être garanti.
@@ -246,7 +247,7 @@ export default function CGVPage() {
       <Section title="Article 13 – Réclamations et médiation">
         <p>
           Pour toute question ou réclamation, le client peut contacter
-          {` ${contact.brand}`} à l'adresse{" "}
+          {` ${contact.brand}`} à l&apos;adresse{" "}
           <a
             className="text-vert underline"
             href={`mailto:${contact.email}`}
@@ -272,7 +273,7 @@ export default function CGVPage() {
       <Section title="Article 14 – Droit applicable">
         <p>
           Les présentes CGV sont soumises au droit français. En cas de différend,
-          les règles légales de compétence juridictionnelle s'appliquent.
+          les règles légales de compétence juridictionnelle s&apos;appliquent.
         </p>
       </Section>
     </LegalPage>

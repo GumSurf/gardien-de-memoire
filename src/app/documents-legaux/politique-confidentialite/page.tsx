@@ -82,8 +82,8 @@ export default function PolitiqueConfidentialitePage() {
           <li>Nom et prénom ;</li>
           <li>Adresse e-mail et numéro de téléphone ;</li>
           <li>Informations communiquées dans une demande de renseignement ou de devis ;</li>
-          <li>Informations nécessaires à l'identification de la sépulture et à la réalisation de la prestation ;</li>
-          <li>Données techniques de navigation, telles que l'adresse IP, le navigateur ou les journaux de connexion.</li>
+          <li>Informations nécessaires à l&apos;identification de la sépulture et à la réalisation de la prestation ;</li>
+          <li>Données techniques de navigation, telles que l&apos;adresse IP, le navigateur ou les journaux de connexion.</li>
         </ul>
         <p>
           Seules les données nécessaires aux finalités indiquées ci-dessous
@@ -114,18 +114,18 @@ export default function PolitiqueConfidentialitePage() {
         </p>
         <Section title="Hébergement du site">
           Le site est hébergé par Vercel Inc., dont le siège social
-          est situé aux États-Unis. L'utilisation de ce service peut
+          est situé aux États-Unis. L&apos;utilisation de ce service peut
           entraîner le traitement de certaines données techniques,
           notamment les adresses IP, les informations relatives au
           navigateur et les journaux de connexion, nécessaires au
           fonctionnement et à la sécurité du site.
 
           Certaines données peuvent être traitées ou transférées
-          en dehors de l'Union européenne, notamment aux États-Unis.
+          en dehors de l&apos;Union européenne, notamment aux États-Unis.
           Vercel indique que ses infrastructures et ses sous-traitants
           peuvent intervenir dans plusieurs pays.
 
-          Pour plus d'informations, vous pouvez consulter la politique
+          Pour plus d&apos;informations, vous pouvez consulter la politique
           de confidentialité de Vercel :
           https://vercel.com/legal/privacy-policy
         </Section>
@@ -133,24 +133,24 @@ export default function PolitiqueConfidentialitePage() {
 
       <Section title="Article 5 – Hébergement et transferts hors Espace économique européen">
         <p>
-          Vercel Inc. est une société établie aux États-Unis. Le choix d'une
+          Vercel Inc. est une société établie aux États-Unis. Le choix d&apos;une
           région européenne pour certaines ressources du site ne garantit pas,
           à lui seul, que tous les traitements, journaux techniques, opérations
-          de support ou traitements des sous-traitants restent dans l'Espace
+          de support ou traitements des sous-traitants restent dans l&apos;Espace
           économique européen.
         </p>
         <p>
-          Des transferts de données hors de l'Espace économique européen peuvent
+          Des transferts de données hors de l&apos;Espace économique européen peuvent
           donc intervenir selon les services Vercel utilisés et leurs
-          sous-traitants. Lorsqu'un transfert est soumis au chapitre V du RGPD,
+          sous-traitants. Lorsqu&apos;un transfert est soumis au chapitre V du RGPD,
           il doit être encadré par un mécanisme valable, par exemple une décision
-          d'adéquation ou, lorsque cela est requis, des clauses contractuelles
+          d&apos;adéquation ou, lorsque cela est requis, des clauses contractuelles
           types accompagnées des mesures nécessaires.
         </p>
         <p>
           Les documents contractuels et garanties applicables doivent être
           vérifiés pour le compte Vercel effectivement utilisé. Il ne faut pas
-          présumer que les mêmes garanties contractuelles s'appliquent à tous
+          présumer que les mêmes garanties contractuelles s&apos;appliquent à tous
           les plans ou comptes.
         </p>
         <p>
@@ -177,7 +177,7 @@ export default function PolitiqueConfidentialitePage() {
       <Section title="Article 7 – Sécurité">
         <p>
           {contact.brand} met en œuvre des mesures raisonnables afin de protéger
-          les données contre la perte, l'accès non autorisé, la divulgation ou
+          les données contre la perte, l&apos;accès non autorisé, la divulgation ou
           la modification. Aucun système de transmission ou de stockage ne peut
           toutefois garantir une sécurité absolue.
         </p>
@@ -187,16 +187,16 @@ export default function PolitiqueConfidentialitePage() {
         <p>
           Conformément au RGPD et à la loi Informatique et Libertés, les
           personnes concernées disposent, selon les conditions prévues par la
-          réglementation, de droits d'accès, de rectification, d'effacement, de
-          limitation, d'opposition et, lorsque cela s'applique, de portabilité.
+          réglementation, de droits d&apos;accès, de rectification, d&apos;effacement, de
+          limitation, d&apos;opposition et, lorsque cela s&apos;applique, de portabilité.
           Elles peuvent également retirer leur consentement lorsque le
           traitement repose sur celui-ci.
         </p>
         <p>
-          Ces droits peuvent être exercés à l'adresse{" "}
+          Ces droits peuvent être exercés à l&apos;adresse{" "}
           <a className="text-vert underline" href={`mailto:${contact.email}`}>{contact.email}</a>.
-          Une preuve d'identité ne pourra être demandée qu'en cas de doute
-          raisonnable sur l'identité du demandeur.
+          Une preuve d&apos;identité ne pourra être demandée qu&apos;en cas de doute
+          raisonnable sur l&apos;identité du demandeur.
         </p>
         <p>
           Une réclamation peut être adressée à la CNIL :{" "}
@@ -208,12 +208,12 @@ export default function PolitiqueConfidentialitePage() {
         <p>
           Le site peut utiliser des traceurs strictement nécessaires à son
           fonctionnement et à sa sécurité. Les traceurs soumis au consentement,
-          notamment certains outils de mesure d'audience ou services tiers, ne
-          doivent être déposés qu'après obtention du consentement de l'utilisateur.
+          notamment certains outils de mesure d&apos;audience ou services tiers, ne
+          doivent être déposés qu&apos;après obtention du consentement de l&apos;utilisateur.
         </p>
         <p>
           Cette section doit être adaptée aux outils réellement installés sur le
-          site. Si aucun traceur soumis au consentement n'est utilisé, ne pas
+          site. Si aucun traceur soumis au consentement n&apos;est utilisé, ne pas
           ajouter de bandeau de consentement inutile.
         </p>
       </Section>

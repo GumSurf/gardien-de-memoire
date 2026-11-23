@@ -29,7 +29,7 @@ export default function About() {
             </p>
 
             <p className="mt-5 text-lg leading-8 text-gris">
-              Mon approche est simple et discrète : un travail soigné, un espace propre et fleuri, ainsi qu'un bilan photographique en fin de prestation.
+              Mon approche est simple et discrète : un travail soigné, un espace propre et fleuri, ainsi qu&apos;un bilan photographique en fin de prestation.
             </p>
 
             <a

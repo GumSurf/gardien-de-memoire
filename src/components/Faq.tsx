@@ -11,7 +11,7 @@ export default function Faq() {
         {/* En-tête */}
         <header className="mb-12 text-center sm:mb-14">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-rose">
-            Besoin d'informations ?
+            Besoin d&apos;informations ?
           </p>
 
           <h2
@@ -22,7 +22,7 @@ export default function Faq() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-gris sm:text-base">
-            Vous vous interrogez sur l'entretien d'une sépulture,
+            Vous vous interrogez sur l&apos;entretien d&apos;une sépulture,
             les prestations ou leur organisation ? Retrouvez ici
             les réponses aux questions les plus courantes.
           </p>

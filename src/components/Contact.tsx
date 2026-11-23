@@ -70,7 +70,7 @@ export default function Contact() {
               </span>
 
               <span className="mt-1 block text-xs leading-5 text-gris">
-                M'appeler directement
+                M&apos;appeler directement
               </span>
             </span>
           </a>
@@ -105,13 +105,13 @@ export default function Contact() {
               </span>
 
               <span className="mt-1 block text-xs leading-5 text-gris">
-                M'écrire un message
+                M&apos;écrire un message
               </span>
             </span>
           </a>
         </div>
 
-        {/* Zone d'intervention et carte */}
+        {/* Zone d&apos;intervention et carte */}
         <div className="mx-auto mt-8 max-w-4xl overflow-hidden rounded-3xl border border-[#E8DFD1] bg-[#FFFCFA] shadow-sm shadow-[#2F5D46]/5">
           <div className="grid md:grid-cols-[0.9fr_1.1fr]">
             {/* Informations pratiques */}
@@ -139,16 +139,16 @@ export default function Contact() {
               </p>
 
               <h3 className="mt-2 text-2xl font-semibold text-vert">
-                Zone d'intervention
+                Zone d&apos;intervention
               </h3>
 
               <p className="mt-3 text-sm leading-7 text-gris sm:text-base">
-                Basée à {contact.ville}, j'interviens dans un rayon de{" "}
+                Basée à {contact.ville}, j&apos;interviens dans un rayon de{" "}
                 {frais.rayonKm} km autour de Gestel pour prendre soin des
                 sépultures.
               </p>
 
-              {/* Rayon d'intervention */}
+              {/* Rayon d&apos;intervention */}
               <div className="mt-5 flex items-center gap-3 rounded-2xl border border-[#E8DFD1] bg-[#F8F5EF] p-4">
                 <span
                   className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-vert"
@@ -193,7 +193,7 @@ export default function Contact() {
 
                 <p className="mt-1 text-sm leading-6 text-gris">
                   Déplacement gratuit à {frais.gratuitA}, puis{" "}
-                  {frais.prixKm} € par kilomètre dans la zone d'intervention.
+                  {frais.prixKm} € par kilomètre dans la zone d&apos;intervention.
                 </p>
               </div>
 

@@ -86,7 +86,7 @@ export default function MentionsLegalesPage() {
       </Section>
 
       <Section title="Directrice de la publication">
-        <p>{contact.name}, en qualité de responsable de l'entreprise {contact.brand}.</p>
+        <p>{contact.name}, en qualité de responsable de l&apos;entreprise {contact.brand}.</p>
       </Section>
 
       <Section title="Hébergement du site">
@@ -97,7 +97,7 @@ export default function MentionsLegalesPage() {
         </p>
         <p>
           Certains traitements techniques liés au fonctionnement du site peuvent
-          être réalisés en dehors de l'Union européenne, notamment aux États-Unis,
+          être réalisés en dehors de l&apos;Union européenne, notamment aux États-Unis,
           selon les services et sous-traitants utilisés.
         </p>
       </Section>
@@ -115,14 +115,14 @@ export default function MentionsLegalesPage() {
 
       <Section title="Responsabilité">
         <p>
-          {contact.brand} s'efforce de fournir des informations exactes et à jour.
+          {contact.brand} s&apos;efforce de fournir des informations exactes et à jour.
           Des erreurs ou omissions peuvent toutefois subsister. Les informations
           présentées sur le site sont données à titre indicatif et ne constituent
           pas un devis ou un engagement contractuel.
         </p>
         <p>
           {contact.brand} ne saurait être tenu responsable des dommages résultant
-          de l'utilisation du site ou de l'impossibilité temporaire d'y accéder,
+          de l&apos;utilisation du site ou de l&apos;impossibilité temporaire d&apos;y accéder,
           dans les limites prévues par la loi.
         </p>
       </Section>
